@@ -137,6 +137,11 @@
                     <?php require '../RespostasFormulario/RespostasTipoR.php' ?>
                 </select>
             </div>
+            <div>
+                <span>
+
+                </span>
+            </div>
             <!-- Perfil tipo R
 
             <div class="form-group">
@@ -219,6 +224,7 @@
 
 if (isset($_POST['cadastrar'])) {
 
+    // ADICIONANDO ESCOLA NO BD
     require_once '../conexao.php';
     require_once '../Class/Escola.php';
     require_once '../DAO/EscolaDAO.php';
@@ -238,7 +244,8 @@ if (isset($_POST['cadastrar'])) {
 
     $retornoIdEscola = $escolaDAO->retornoIdEscola($nomeEscola);
 
-    var_dump($retornoIdEscola[0]);
+
+    //  ADICIONANDO ENDEREÇO NO BD
 
     require_once '../Class/Endereco.php';
     require_once '../DAO/EnderecoDAO.php';
@@ -258,7 +265,8 @@ if (isset($_POST['cadastrar'])) {
     $nomeRua = $endereco->getRua();
     $retornoIdEndereco = $enderecoDAO->retornoIdEndereco($nomeRua);
 
-    var_dump($retornoIdEndereco[0]);
+
+    // ADICIONANDO PESSOA NO BD
 
     require_once '../Class/Pessoa.php';
     require_once '../DAO/PessoaDAO.php';
@@ -280,9 +288,10 @@ if (isset($_POST['cadastrar'])) {
 
     $rgID = $pessoa->getRg();
 
-    var_dump($rgID);
     $retornoIdPessoa = $pessoaDAO->returnIdPessoa($rgID);
-    var_dump($retornoIdPessoa[0]);
+
+
+    // ADICIONANDO RESULTADO NO BD
 
     require_once '../Class/Resultado.php';
     require_once '../DAO/ResultadoDAO.php';
