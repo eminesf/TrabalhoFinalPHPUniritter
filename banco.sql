@@ -12,7 +12,7 @@ CREATE TABLE pessoa
     idResultuado_resultado  INT         NOT NULL,
 
     PRIMARY KEY(idPessoa),
-    FOREIGN KEY (idEndereco_endereco) REFERENCES endereco(idEndereco)
+    FOREIGN KEY (idEndereco_endereco) REFERENCES endereco(idEndereco),
     FOREIGN KEY (idEscola_escola) REFERENCES escola(idEscola),
     FOREIGN KEY (idResultuado_resultado) REFERENCES resultado(idResultado)
 );
