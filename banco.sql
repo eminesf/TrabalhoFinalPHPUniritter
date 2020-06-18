@@ -29,9 +29,9 @@ CREATE TABLE pessoa
     nome                    VARCHAR(40) NOT NULL,
     email                   VARCHAR(30) NOT NULL,
     nascimento              VARCHAR(20) NOT NULL,
-    rg                      INT(10)     NOT NULL,
-    celular                 INT(11)     NOT NULL,
-    telResidencial          INT(11)     NOT NULL,
+    rg                      VARCHAR(10) NOT NULL,
+    celular                 VARCHAR(11) NOT NULL,
+    telResidencial          VARCHAR(11) NOT NULL,
     idEscola_escola         INT         NOT NULL,
     idEndereco_endereco     INT         NOT NULL,
 

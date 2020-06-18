@@ -3,23 +3,12 @@
 
 class Endereco
 {
-    private $idEndereco;
     private $estado;
     private $cidade;
     private $bairro;
     private $rua;
     private $numero;
     private $complemento;
-
-    public function getIdEndereco()
-    {
-        return $this->idEndereco;
-    }
-
-    public function setIdEndereco($idEndereco)
-    {
-        $this->idEndereco = $idEndereco;
-    }
 
     public function getEstado()
     {

@@ -3,7 +3,6 @@
 
 class Pessoa
 {
-    private $idPessoa;
     private $nome;
     private $email;
     private $nascimento;
@@ -13,16 +12,6 @@ class Pessoa
     private $idEscola;
     private $idEndereco;
 
-
-    public function getIdPessoa()
-    {
-        return $this->idPessoa;
-    }
-
-    public function setIdPessoa($idPessoa)
-    {
-        $this->idPessoa = $idPessoa;
-    }
 
     public function getNome()
     {

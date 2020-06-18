@@ -7,26 +7,25 @@ class PessoaDAO
 
         global $conexao;
 
-        $sql = $conexao->prepare("INSERT INTO pessoa (nome, email, nascimento, rg, celular, telResidencial, idEscola_escola, idEndereco_endereco) VALUES(?,?,?,?,?,?,?,?)");
-        $sql->bind_param("sssiii", $nome, $email, $nascimento, $rg, $celular, $telResidencial, $idEscola_escola, $idEndereco_endereco);
+        $sql = $conexao->prepare("INSERT INTO pessoa (nome, email, nascimento, rg, celular, telResidencial, idEscola_escola, idEndereco_endereco) VALUES(?,?,?,?,?,?,?,?)" );
+        $sql->bind_param("ssssssii", $nome, $email, $nascimento, $rg, $cel, $telRes, $idEscola, $idEnd);
 
         $nome = $pessoa->getNome();
         $email = $pessoa->getEmail();
         $nascimento = $pessoa->getNascimento();
         $rg = $pessoa->getRg();
-        $celular = $pessoa->getCelular();
-        $telResidencial = $pessoa->getTelResidencial();
-        $idEscola_escola = $pessoa->getIdEscola();
-        $idEndereco_endereco = $pessoa->getIdEndereco();
+        $cel = $pessoa->getCelular();
+        $telRes = $pessoa->getTelResidencial();
+        $idEscola = $pessoa->getIdEscola();
+        $idEnd = $pessoa->getIdEndereco();
 
         $sql->execute();
-
     }
 
-    public function returnIdPessoa($rg){
+    public function returnIdPessoa($rgID){
         global $conexao;
 
-        $sql = $conexao->query("SELECT idPessoa FROM pessoa WHERE rg='$rg'");
+        $sql = $conexao->query("SELECT idPessoa FROM pessoa WHERE rg='$rgID'");
 
         return $sql->fetch_array();
     }

@@ -15,7 +15,7 @@
 <body>
 <div id="container">
     <div id="inter" class="text-center">
-        <img src="../Imagens/Inter.jpg" alt="">
+        <img src="../Imagens/unnamed.png" alt="">
     </div>
     <div id="formulario">
         <form id="form" method="post" action="Formulario.php">
@@ -34,15 +34,15 @@
             </div>
             <div class="form-group">
                 <span>identidade (RG)*</span>
-                <input id="inputs" class="form-control" type="number" name="rg" >
+                <input id="inputs" class="form-control" type="text" name="rg" >
             </div>
             <div class="form-group">
                 <span>Celular*</span>
-                <input id="inputs" class="form-control" type="tel" name="celular" >
+                <input id="inputs" class="form-control" type="text" name="celular" >
             </div>
             <div class="form-group">
                 <span>Telefone Residencial*</span>
-                <input id="inputs" class="form-control" type="tel" name="telResidencial" >
+                <input id="inputs" class="form-control" type="text" name="telResidencial" >
             </div>
             <!-- Dados Endereço -->
             <div class="form-group">
@@ -131,13 +131,14 @@
                 </select>
             </div>
             
-            <!-- Perfil tipo R
             <div class="form-group">
                 <span>Sou bastante autêntico e digo aquilo que penso.*</span>
                 <select id="inputs" class="form-control" type="text" name="tipoR_um" required="required">
                     <?php require '../RespostasFormulario/RespostasTipoR.php' ?>
                 </select>
             </div>
+            <!-- Perfil tipo R
+
             <div class="form-group">
                 <span>Sou introspectivo, penso muito antes de me expor.*</span>
                 <select id="inputs" class="form-control" type="text" name="tipoR_dois" required="required">
@@ -255,12 +256,45 @@ if (isset($_POST['cadastrar'])) {
     $enderecoDAO->insertEndereco($endereco);
 
     $nomeRua = $endereco->getRua();
-
     $retornoIdEndereco = $enderecoDAO->retornoIdEndereco($nomeRua);
 
     var_dump($retornoIdEndereco[0]);
 
+    require_once '../Class/Pessoa.php';
+    require_once '../DAO/PessoaDAO.php';
+
     $pessoa = new Pessoa();
+
+    $pessoa->setNome($_POST['nome']);
+    $pessoa->setEmail($_POST['email']);
+    $pessoa->setNascimento($_POST['dataNascimento']);
+    $pessoa->setRg($_POST['rg']);
+    $pessoa->setCelular($_POST['celular']);
+    $pessoa->setTelResidencial($_POST['telResidencial']);
+    $pessoa->setIdEscola($retornoIdEscola);
+    $pessoa->setIdEndereco($retornoIdEndereco);
+
+    $pessoaDAO = new PessoaDAO();
+
+    $pessoaDAO->insertPessoa($pessoa);
+
+    $rgID = $pessoa->getRg();
+
+    var_dump($rgID);
+    $retornoIdPessoa = $pessoaDAO->returnIdPessoa($rgID);
+    var_dump($retornoIdPessoa[0]);
+
+    require_once '../Class/Resultado.php';
+    require_once '../DAO/ResultadoDAO.php';
+
+    $resultado = new Resultado();
+
+    $resultado->setResultadoFinal($_POST['tipoR_um']);
+    $resultado->setIdPessoaPessoa($retornoIdPessoa);
+
+    $resultadoDAO = new ResultadoDAO();
+
+    $resultadoDAO->insertResultado($resultado);
 
 
 

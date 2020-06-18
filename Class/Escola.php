@@ -3,22 +3,11 @@
 
 class Escola
 {
-    private $idEscola;
     private $nomeEscola;
     private $bairoEscola;
     private $anoLetivo;
     private $turma;
     private $perfilEscola;
-
-    public function getIdEscola()
-    {
-        return $this->idEscola;
-    }
-
-    public function setIdEscola($idEscola)
-    {
-        $this->idEscola = $idEscola;
-    }
 
     public function getNomeEscola()
     {
