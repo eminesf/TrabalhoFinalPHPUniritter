@@ -3,14 +3,23 @@
 
 class Endereco
 {
+    private $idEndereco;
     private $estado;
     private $cidade;
     private $bairro;
     private $rua;
     private $numero;
     private $complemento;
-    private $idPessoa;
 
+    public function getIdEndereco()
+    {
+        return $this->idEndereco;
+    }
+
+    public function setIdEndereco($idEndereco)
+    {
+        $this->idEndereco = $idEndereco;
+    }
 
     public function getEstado()
     {
@@ -72,13 +81,4 @@ class Endereco
         $this->complemento = $complemento;
     }
 
-    public function getIdPessoa()
-    {
-        return $this->idPessoa;
-    }
-
-    public function setIdPessoa($idPessoa)
-    {
-        $this->idPessoa = $idPessoa;
-    }
 }

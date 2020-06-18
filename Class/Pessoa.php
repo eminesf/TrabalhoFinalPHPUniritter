@@ -3,23 +3,25 @@
 
 class Pessoa
 {
+    private $idPessoa;
     private $nome;
     private $email;
     private $nascimento;
     private $rg;
     private $celular;
     private $telResidencial;
-    private $idEscola_escola;
+    private $idEscola;
+    private $idEndereco;
 
 
-    public function getIdEscolaEscola()
+    public function getIdPessoa()
     {
-        return $this->idEscola_escola;
+        return $this->idPessoa;
     }
 
-    public function setIdEscolaEscola($idEscola_escola)
+    public function setIdPessoa($idPessoa)
     {
-        $this->idEscola_escola = $idEscola_escola;
+        $this->idPessoa = $idPessoa;
     }
 
     public function getNome()
@@ -82,6 +84,24 @@ class Pessoa
         $this->telResidencial = $telResidencial;
     }
 
+    public function getIdEscola()
+    {
+        return $this->idEscola;
+    }
 
+    public function setIdEscola($idEscola)
+    {
+        $this->idEscola = $idEscola;
+    }
+
+    public function getIdEndereco()
+    {
+        return $this->idEndereco;
+    }
+
+    public function setIdEndereco($idEndereco)
+    {
+        $this->idEndereco = $idEndereco;
+    }
 
 }
