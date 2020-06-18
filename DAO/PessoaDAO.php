@@ -7,10 +7,8 @@ class PessoaDAO
 
         global $conexao;
 
-        $escola = new Escola();
-
-        $sql = $conexao->prepare("INSERT INTO pessoa (nome, email, nascimento, rg, celular, telResidencial) VALUES(?,?,?,?,?,?)");
-        $sql->bind_param("sssiii", $nome, $email, $nascimento, $rg, $celular, $telResidencial);
+        $sql = $conexao->prepare("INSERT INTO pessoa (nome, email, nascimento, rg, celular, telResidencial, idEscola_escola, idEndereco_endereco) VALUES(?,?,?,?,?,?,?,?)");
+        $sql->bind_param("sssiii", $nome, $email, $nascimento, $rg, $celular, $telResidencial, $idEscola_escola, $idEndereco_endereco);
 
         $nome = $pessoa->getNome();
         $email = $pessoa->getEmail();
@@ -18,9 +16,18 @@ class PessoaDAO
         $rg = $pessoa->getRg();
         $celular = $pessoa->getCelular();
         $telResidencial = $pessoa->getTelResidencial();
+        $idEscola_escola = $pessoa->getIdEscola();
+        $idEndereco_endereco = $pessoa->getIdEndereco();
 
         $sql->execute();
 
     }
 
+    public function returnIdPessoa($rg){
+        global $conexao;
+
+        $sql = $conexao->query("SELECT idPessoa FROM pessoa WHERE rg='$rg'");
+
+        return $sql->fetch_array();
+    }
 }

@@ -17,16 +17,13 @@ class EscolaDAO
         $perfilEscola = $escola->getPerfilEscola();
 
         $sql->execute();
-
     }
 
     public function retornoIdEscola($nomeEscola){
         global $conexao;
 
-        $sql = $conexao->query("SELECT id_escola FROM escola WHERE escola='$nomeEscola'");
+        $sql = $conexao->query("SELECT idEscola FROM escola WHERE nomeEscola='$nomeEscola'");
 
-       // var_dump($sql);
         return $sql->fetch_array();
-
     }
 }
