@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6cc4e729-b7ee-4e79-94e1-91e8fa52ea37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Class/Endereco.php" beforeDir="false" afterPath="$PROJECT_DIR$/Class/Endereco.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/Escola.php" beforeDir="false" afterPath="$PROJECT_DIR$/Class/Escola.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class/Pessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/Class/Pessoa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/EscolaDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/EscolaDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/PessoaDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/PessoaDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/ResultadoDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/ResultadoDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banco.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banco.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1d3Zyovm6Uc5yVhiBapAwMy7ZnC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cc4e729-b7ee-4e79-94e1-91e8fa52ea37" name="Default Changelist" comment="" />
+      <created>1591655993442</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591655993442</updated>
+      <workItem from="1591655994565" duration="5003000" />
+      <workItem from="1592084471754" duration="4630000" />
+      <workItem from="1592099737010" duration="19011000" />
+      <workItem from="1592170467372" duration="9626000" />
+      <workItem from="1592190887350" duration="9000" />
+      <workItem from="1592259629965" duration="3908000" />
+      <workItem from="1592409205428" duration="1370000" />
+      <workItem from="1592453462071" duration="1289000" />
+      <workItem from="1592455024912" duration="7175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="336" y="358" key="#SQL_Dialects" timestamp="1592114209676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="358" key="#SQL_Dialects/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592114209676" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592118441011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592118441011" />
+    <state x="753" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1592460989822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592460989822" />
+    <state x="721" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592456439108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592456439108" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592110393435">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592110393435" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592261396371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592261396371" />
+    <state x="742" y="243" key="NewPhpClassDialog" timestamp="1592090757832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592090757832" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1592108580196">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592108580196" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592109517445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592109517445" />
+    <state x="1912" y="297" width="699" height="744" maximized="true" key="dock-window-1" timestamp="1592461758927">
+      <screen x="1920" y="305" width="1366" height="728" />
+    </state>
+    <state x="1912" y="297" width="699" height="744" maximized="true" key="dock-window-1/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592461758927" />
+    <state x="1920" y="305" width="1382" height="815" key="dock-window-2" timestamp="1592187711215">
+      <screen x="1920" y="305" width="1366" height="728" />
+    </state>
+    <state x="1920" y="305" width="1382" height="815" key="dock-window-2/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592187711215" />
+    <state x="667" y="253" width="585" height="614" key="find.popup" timestamp="1592460273160">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="253" width="585" height="614" key="find.popup/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592460273160" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1592113568457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1592113568457" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1591658135240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1591658135240" />
+  </component>
+</project>

@@ -23,15 +23,6 @@ CREATE TABLE escola
     PRIMARY KEY(idEscola)
 ) ENGINE=INNODB;
 
-CREATE TABLE resultado
-(
-    idResultado     INT         NOT NULL AUTO_INCREMENT,
-    resultado       VARCHAR(20) NOT NULL,
-    idPessoa_pessoa INT         NOT NULL,
-
-    PRIMARY KEY (idResultado)
-) ENGINE=INNODB;
-
 CREATE TABLE pessoa
 (
     idPessoa                INT         NOT NULL AUTO_INCREMENT,
@@ -43,10 +34,18 @@ CREATE TABLE pessoa
     telResidencial          INT(11)     NOT NULL,
     idEscola_escola         INT         NOT NULL,
     idEndereco_endereco     INT         NOT NULL,
-    idResultado_resultado  INT         NOT NULL,
 
     PRIMARY KEY(idPessoa),
     FOREIGN KEY (idEndereco_endereco) REFERENCES endereco(idEndereco),
-    FOREIGN KEY (idEscola_escola) REFERENCES escola(idEscola),
-    FOREIGN KEY (idResultado_resultado) REFERENCES resultado(idResultado)
+    FOREIGN KEY (idEscola_escola) REFERENCES escola(idEscola)
+) ENGINE=INNODB;
+
+CREATE TABLE resultado
+(
+    idResultado     INT         NOT NULL AUTO_INCREMENT,
+    resultado       VARCHAR(20) NOT NULL,
+    idPessoa_pessoa INT         NOT NULL,
+
+    PRIMARY KEY (idResultado),
+    FOREIGN KEY (idPessoa_pessoa) REFERENCES pessoa(idPessoa)
 ) ENGINE=INNODB;
